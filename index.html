@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>綠雷德感動玩linktree</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #A1D5F8;
+    color: #fff;
+}
+
+
+
+/* 容器 */
+.container {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    position: relative;
+    max-width: 420px;
+    margin: auto;
+    padding: 40px 20px;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('images/KV.jpg') center/cover no-repeat;
+    opacity: 0.6;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/* 頭像 */
+.profile {
+    text-align: center;
+    margin-bottom: 25px;
+	position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.profile img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.6);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* 標題 */
+.profile h1 {
+    margin: 12px 0 10px;
+    font-weight: 400;
+    font-family: actor;
+    font-style: normal;
+	
+}
+
+/* 新增活動資訊 */
+.event-info {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* 卡片 */
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    backdrop-filter: blur(12px);
+}
+
+
+/* 內容層（確保在最上面） */
+.card > * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* 按鈕 */
+.link-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 文字置中 */
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 18px;
+    margin: 12px 0;
+    border-radius: 50px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
+    transition: all 0.3s ease;
+}
+
+/* 流光 */
+.link-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.4), transparent);
+    transition: 0.6s;
+}
+
+.link-btn:hover::before {
+    left: 100%;
+}
+
+.link-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* icon */
+.link-btn img {
+    position: absolute;
+    left: 15px; /* 固定左側 */
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+/* ripple */
+.link-btn span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    background: rgba(255,255,255,0.5);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+body,td,th {
+    font-family: amaranth;
+    font-style: normal;
+    font-weight: 400;
+}
+</style>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/concert-one:n4:default;acme:n4:default;actor:n4:default;amaranth:n4:default.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile">
+        <img src="images/LOGO@300x-8.png">
+        <h1>綠雷德感動玩</h1>
+
+        <div class="event-info">
+            🦈 Baby Shark 守護海洋大冒險🦈 <br>
+            日期：2026 年 4 月 17 日 – 2026 年 6 月 21 日 <br>
+            地點：國立臺灣科學教育館7樓西側特展廳<br>
+            （臺北市士林區士商路 189 號）
+        </div>
+    </div>
+
+    <div class="card">
+		
+
+        <a class="link-btn" href="https://www.facebook.com/share/v/1ArPqaHhxk/" target="_blank">
+            <img src="images/FB logo.jpg">
+            <div class="link-text">Facebook綠雷德感動玩</div>
+        </a>
+
+        <a class="link-btn" href="https://kidsfun.tw/klk" target="_blank">
+            <img src="images/01@300x-8.png">
+        <div class="link-text">Klook</div>
+        </a>
+
+        <a class="link-btn" href="https://kidsfun.tw/acp" target="_blank">
+            <img src="images/02@300x-8.png">
+            <div class="link-text">ACCUPASS</div>
+        </a>
+
+        <a class="link-btn" href="https://kidsfun.tw/kkd" target="_blank">
+            <img src="images/03@300x-8.png">
+            <div class="link-text">KKday</div>
+        </a>
+
+        <a class="link-btn" href="https://kidsfun.tw/ibon" target="_blank">
+            <img src="images/04@300x-8.png">
+            <div class="link-text">ibon</div>
+        </a>
+
+        <a class="link-btn" href="https://kidsfun.tw/udn" target="_blank">
+            <img src="images/05@300x-8.png">
+            <div class="link-text">udn</div>
+        </a>
+
+        <a class="link-btn" href="https://kidsfun.tw/fami" target="_blank">
+            <img src="images/06@300x-8.png">
+            <div class="link-text">全網Fami ticket</div>
+        </a>
+
+    </div>
+
+</div>
+
+<script>
+document.querySelectorAll('.link-btn').forEach(button => {
+    button.addEventListener('click', function(e) {
+        const circle = document.createElement('span');
+        circle.classList.add('ripple');
+
+        const rect = this.getBoundingClientRect();
+        circle.style.left = e.clientX - rect.left + 'px';
+        circle.style.top = e.clientY - rect.top + 'px';
+
+        this.appendChild(circle);
+        setTimeout(() => circle.remove(), 600);
+    });
+});
+</script>
+
+</body>
+</html>
